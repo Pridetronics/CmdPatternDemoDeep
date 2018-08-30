@@ -51,7 +51,7 @@ public class DaLoop {
       System.out.println(); System.out.println("Time " + fpgaTime);
 //    }
     for ( CommandAbstract c : commands ) {
-      if ( c.getName() == "default" ) continue;  // skip the defuka command
+      if ( c.getName() == "default" ) continue;  // skip the default command
       c.execute();
       if ( c.isFinished() ) {
         deleteList.push(c);
